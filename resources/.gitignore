@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+userdata/
+userdata/logs
+news/
+whitelist/
+not_tt_c/
+
+*.log
+*.mf
+*.bin
+*.db
+*.pyc
+
+account-bridge.db

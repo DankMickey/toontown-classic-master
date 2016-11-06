@@ -1,0 +1,3 @@
+[submodule "libnametag"]
+	path = toontown/nametag
+	url = git@gitlab.com:Toontown-Classic/libnametag.git
