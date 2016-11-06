@@ -202,7 +202,7 @@ class OptionsTabPage(DirectFrame):
             self.visualEffectText.enter()
             self.updateVisualEffect()
         
-        if self.parent.book.safeMode:
+        if base.localAvatar.book.safeMode:
             self.exitButton.hide()
         else:
             self.exitButton.show()
