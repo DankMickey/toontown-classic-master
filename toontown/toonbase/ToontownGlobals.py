@@ -408,7 +408,7 @@ MinigameReleaseDates = {IceGameId: (2008, 8, 5),
  TwoDGameId: (2008, 8, 20),
  CogThiefGameId: (2008, 8, 27)}
 
-if config.GetBool('disable-problematic-minigames', False): # < ROFL
+if getConfigExpress().GetBool('disable-problematic-minigames', False): # < ROFL
     MinigameReleaseDates[TagGameId] = (2020, 1, 1) # tag game (AI reset)
     MinigameReleaseDates[CogThiefGameId] = (2020, 1, 1) # cog thief (bad physics)
     MinigameReleaseDates[PhotoGameId] = (2020, 1, 1) # photo fun (awful lag)

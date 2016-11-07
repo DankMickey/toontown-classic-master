@@ -2,8 +2,16 @@
 
 __all__ = ['SfxPlayer']
 
+
 import math
-from panda3d.core import *
+from pandac.PandaModules import *
+
+class Unior:
+    pass
+
+UNIOR = Unior()
+STUPID = not Unior()
+WANT_FUCKING_AUDIO_CRASH = UNIOR is STUPID
 
 class SfxPlayer:
     """
@@ -71,7 +79,7 @@ class SfxPlayer:
         if sfx:
             if not cutoff:
                 cutoff = self.cutoffDistance
-
+            
             self.setFinalVolume(sfx, node, volume, listenerNode, cutoff)
 
             # don't start over if it's already playing, unless
@@ -92,9 +100,7 @@ class SfxPlayer:
                 finalVolume = 1
             if volume is not None:
                 finalVolume *= volume
-            if node is not None:
+            if node is not None and WANT_FUCKING_AUDIO_CRASH:
                 finalVolume *= node.getNetAudioVolume()
             sfx.setVolume(finalVolume)
-
-
-
+        

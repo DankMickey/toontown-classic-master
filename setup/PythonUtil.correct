@@ -52,7 +52,7 @@ import traceback
 import __builtin__
 from StringIO import StringIO
 import marshal
-import ElementTree as ET
+from xml.etree import ElementTree as ET
 from HTMLParser import HTMLParser
 import BpDb
 import unicodedata
