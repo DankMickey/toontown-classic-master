@@ -1,0 +1,2 @@
+dependencies\panda\python\ppython.exe -m toontown.ai.ServiceStart --base-channel 1000000 --max-channels 99999999 --stateserver 10000 --district-name "TTH-Dev-1" --astron-ip "127.0.0.1:7199" --eventlogger-ip "127.0.0.1:7197" --config dev.prc
+pause

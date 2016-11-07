@@ -17,6 +17,7 @@ connect.bat
 
 # Screenshots
 screenshots/*.jpg
+resources/
 
 run_localhost.bat
 
