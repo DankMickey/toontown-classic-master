@@ -42,7 +42,7 @@ class game:
 __builtin__.game = game
 
 from otp.ai.AIBaseGlobal import *
-
+print config
 from toontown.uberdog.ToontownUberRepository import ToontownUberRepository
 simbase.air = ToontownUberRepository(config.GetInt('air-base-channel', 400000000), config.GetInt('air-stateserver', 10000))
 host = config.GetString('air-connect', '127.0.0.1')
